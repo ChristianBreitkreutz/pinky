@@ -1,0 +1,2 @@
+class OwnExeption < StandardError
+end
