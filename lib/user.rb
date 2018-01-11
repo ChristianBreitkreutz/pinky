@@ -1,4 +1,4 @@
-require_relative 'Request'
+require_relative 'request'
 
 class User
   def initialize

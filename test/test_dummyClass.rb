@@ -1,6 +1,6 @@
 require 'test/unit'
 
-require_relative '../lib/DummyClass'
+require_relative '../lib/dummyClass'
 
 class Test_DummyClass < Test::Unit::TestCase
   def test_constuctor_data

@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../lib/OwnExeption'
+require_relative '../lib/ownExeption'
 
 class Test_Exeptions < Test::Unit::TestCase
   def test_direct_exeption
