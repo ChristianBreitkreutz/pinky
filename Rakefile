@@ -1,8 +1,10 @@
 require 'rake/testtask'
 
-Rake::TestTask.new do |t|
-  t.libs = ["lib"]
-  t.warning = true
-  t.verbose = true
-  t.test_files = FileList['test/Test_*.rb']
+Rake::TestTask.new do |test|
+  test.libs = ["lib"]
+  test.warning = true
+  test.verbose = true
+  test.test_files = FileList['test/Test_*.rb']
 end
+
+task :default => :test
