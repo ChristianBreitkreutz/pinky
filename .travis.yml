@@ -1,5 +1,5 @@
-language: ruby
-rvm:
-  - 2.2
-  - jruby
-  - 2.0.0-p247
+lang: ruby
+
+script: bundle exec rake
+
+rvm: 2.1
