@@ -13,14 +13,28 @@ class TestExeptions < Test::Unit::TestCase
       raise OwnExeption, "WTF"
     end
   end
-  #todo
-#  begin  
-#    # -  raise ArgumentError, "oh noo"
-#  rescue OneTypeOfException  
-#    # -  
-#  rescue AnotherTypeOfException  
-#    # -  
-#  else  
-#    # Other exceptions  
-#  end 
+#--------------------------------------------------------------------------
+  def test_tryCatchFinal
+    assert_equal('init-ArgumentError-final',tryCatchFinal(ArgumentError))
+    assert_equal('init-OwnExeption-final',tryCatchFinal(OwnExeption))
+    assert_raise RuntimeError do()
+      tryCatchFinal(RuntimeError)
+    end
+  end
+#--------------------------------------------------------------------------
+# helpers  
+#--------------------------------------------------------------------------
+  def tryCatchFinal(errorType)
+    value = 'init-'
+    begin  
+      raise errorType
+    rescue ArgumentError  
+      value += 'ArgumentError-'
+    rescue OwnExeption  
+      value += 'OwnExeption-'
+    ensure  
+      value += "final"
+    end
+    return value
+  end
 end
