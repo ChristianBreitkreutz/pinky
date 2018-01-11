@@ -1,2 +1,1 @@
-class OwnExeption < StandardError
-end
+OwnExeption = Class.new(StandardError)
