@@ -2,7 +2,7 @@ require 'test/unit'
 
 require_relative '../lib/user'
 
-class TestUser < Test::Unit::TestCase
+class Test_User < Test::Unit::TestCase
   def test_UserGetter
     user = User.new()
     assert_equal('Mrs. Dennis Schulist', user.getNameById(6))

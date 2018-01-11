@@ -1,7 +1,7 @@
 require 'test/unit'
 require_relative '../lib/OwnExeption'
 
-class TestExeptions < Test::Unit::TestCase
+class Test_Exeptions < Test::Unit::TestCase
   def test_direct_exeption
     assert_raise RuntimeError do()
       raise "WTF"

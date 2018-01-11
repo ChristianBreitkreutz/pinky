@@ -2,7 +2,7 @@ require 'test/unit'
 
 require_relative '../lib/DummyClass'
 
-class TestDummyClass < Test::Unit::TestCase
+class Test_DummyClass < Test::Unit::TestCase
   def test_constuctor_data
     dummyClass = DummyClass.new('myData')
     dummyClass.getInitial()

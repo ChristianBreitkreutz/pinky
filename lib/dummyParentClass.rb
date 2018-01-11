@@ -1,6 +1,6 @@
 class DummyParentClass
   def askMum(question)
-    return 'Mum said. ' +messageBuilder(question)
+    return 'Mum said. ' + messageBuilder(question)
   end
 
   #--------------------------------------------------------------------------
@@ -8,7 +8,7 @@ class DummyParentClass
     if(question.match('sweet'))
       return 'No! You must not'
     else
-      return 'Dad said. ' +messageBuilder(question)
+      return 'Dad said. ' + messageBuilder(question)
     end
   end
 

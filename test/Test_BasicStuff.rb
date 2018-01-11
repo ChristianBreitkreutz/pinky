@@ -1,6 +1,6 @@
 require 'test/unit'
 
-class BasicStuff < Test::Unit::TestCase
+class Test_BasicStuff < Test::Unit::TestCase
   def test_stringConcat
     ruby = 'Ruby'
     assert_equal('Hello Ruby', 'Hello '+ ruby, '+ concatenation went wrong')
